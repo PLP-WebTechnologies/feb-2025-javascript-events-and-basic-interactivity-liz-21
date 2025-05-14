@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>JavaScript Event Playground</h1>
+
+  <!-- Event Handling -->
+  <button id="clickBtn">Click Me!</button>
+  <div id="hoverBox">Hover over me!</div>
+  <input type="text" id="keypressInput" placeholder="Type something..." />
+
+  <!-- Interactive Elements -->
+  <button id="changeColorBtn">Change My Color</button>
+  <div id="slideshow">
+    <img src="https://via.placeholder.com/150" id="slide" />
+    <button id="nextImg">Next Image</button>
+  </div>
+
+<!-- Tabs -->
+<div class="tabs">
+  <button onclick="openTab('tab1')">Tab 1</button>
+  <button onclick="openTab('tab2')">Tab 2</button>
+
+  <!-- Tab 1 Content -->
+  <div id="tab1" class="tabContent">
+    <h2>Welcome to Tab 1</h2>
+    <p>This is the first tab.</p>
+    <ul>
+      <li>Make sure your email is correct</li>
+      <li>Use strong password</li>
+    </ul>
+  </div>
+
+  <!-- Tab 2 Content -->
+  <div id="tab2" class="tabContent" style="display:none;">
+    <h2>Explore Tab 2</h2>
+    <p>This tab could show an image and a table of data.</p>
+    <img src="https://images.pexels.com/photos/10036979/pexels-photo-10036979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sample Image">
+    <table border="1">
+      <tr><th>Name</th><th>Score</th></tr>
+      <tr><td>Alice</td><td>85</td></tr>
+      <tr><td>Bob</td><td>90</td></tr>
+    </table>
+  </div>
+</div>
+
+  <!-- Form Validation -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" minlength="8" required />
+    <span id="feedback"></span>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
